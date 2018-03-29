@@ -21,14 +21,15 @@ https://mirrors.tuna.tsinghua.edu.cn/help/pypi/
 ***
 
 ## pip 安装指定版本的包 
-pip install somepage==X.X.X(版本号)
 
+pip install somepackage==X.X.X(版本号)
 ***
 
 ## spark读取文件
 ### 本地文件 file:///home/z/Desktop/README.md
 ### hdfs文件 hdfs://Master:9000/user/README.md
-
+默认是从hdfs读取文件，也可以指定sc.textFile("路径").在路径前面加上hdfs://表示从hdfs文件系统上读
+本地文件读取 sc.textFile("路径").在路径前面加上file:// 表示从本地文件系统读，如file:///home/user/spark/README.md
 ***
 
 ## 配置pyspark的python版本
