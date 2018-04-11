@@ -38,3 +38,7 @@ pip install somepackage==X.X.X(版本号)
 ### export PYSPARK_PYTHON=python3
 ### export PYSPARK_DRIVER_PYTHON=ipython
 ### #export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+
+***
+## 开机自动连网设置
+https://www.cnblogs.com/flying607/p/5730851.html
